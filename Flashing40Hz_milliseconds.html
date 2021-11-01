@@ -8,31 +8,6 @@
     <title>40Hz Flashing Using Milliseconds</title>
 </head>
 <body>
-    <script type="text/processing">
-        int time = millis();
-
-        void setup() {
-          size(1280, 720);
-          background(0);
-          noStroke();
-        }
-        
-        void draw() {
-          background(0);
-        
-          fill(255); // sets fill color to white
-        
-          int passedMillis = millis() - time; // calculates passed milliseconds
-          if(passedMillis >= 25){
-              time = millis();
-              fill(0,0,0);  // if more than 215 milliseconds passed set fill color to red
-          }
-          rect(0,0,1280,720); // draw first circle
-        
-        
-          fill(255); // fill white
-        }
-    </script>
-    <canvas id="sketch" style="border: 1px solid black;"></canvas>
+    <canvas data-processing-sources="/Users/mother/Documents/GitHub/EricSchubert_Fall2021_CreativeTech3/sketch_40Hz_Flash_Milli.pde"></canvas>
 </body>
 </html>
