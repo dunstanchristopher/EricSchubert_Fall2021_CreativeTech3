@@ -9,30 +9,30 @@
 </head>
 <body>
     <canvas data-processing-sources="sketch_40Hz_Flash_Milli.pde"></canvas>
-    <p>Code:
-        int time = millis();
-
-        void setup() {
-        size(1280, 720);
-        background(0);
-        noStroke();
-        }
-
-        void draw() {
-        background(0);
-
-        fill(255); // sets fill color to white
-
-        int passedMillis = millis() - time; // calculates passed milliseconds
-        if(passedMillis >= 25){
-            time = millis();
-            fill(0,0,0);  // if more than 215 milliseconds passed set fill color to red
-        }
-        rect(0,0,1280,720); // draw first circle
-
-
-        fill(255); // fill white
-        } 
+    <p>Code:<br>
+    int time = millis();<br>
+    <br>
+        void setup() {<br>
+        size(1280, 720);<br>
+        background(0);<br>
+        noStroke();<br>
+        }<br>
+        <br>
+        void draw() {<br>
+        background(0);<br>
+        <br>
+        fill(255); // sets fill color to white<br>
+        <br>
+        int passedMillis = millis() - time; // calculates passed milliseconds<br>
+        if(passedMillis >= 25){<br>
+            time = millis();<br>
+            fill(0,0,0);  // if more than 215 milliseconds passed set fill color to red<br>
+        }<br>
+        rect(0,0,1280,720); // draw first circle<br>
+        <br>
+        <br>
+        fill(255); // fill white<br>
+        }<br> 
     </p>
 </body>
 </html>
