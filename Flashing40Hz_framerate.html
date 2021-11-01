@@ -9,16 +9,16 @@
 </head>
 <body>
     <canvas data-processing-sources="sketch_40Hz_Flash_Sketch.pde"></canvas>
-    <p>Code:
-        color c1 = color(0,0,0), c2 = color(255,255,255), current;
-        void setup() { 
-          frameRate(40);
-          size(1280, 960);
-          current = c1;
-        }
-        void draw() { background(current);
-        if(current==c1) { current = c2; } else { current = c1; }
-        } 
+    <p>Code:<br>
+        color c1 = color(0,0,0), c2 = color(255,255,255), current;<br>
+        void setup() { <br>
+          frameRate(40);<br>
+          size(1280, 960);<br>
+          current = c1;<br>
+        }<br>
+        void draw() { background(current);<br>
+        if(current==c1) { current = c2; } else { current = c1; }<br>
+        } <br>
     </p>
 </body>
 </html>
